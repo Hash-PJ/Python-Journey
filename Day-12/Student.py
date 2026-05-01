@@ -7,29 +7,40 @@
 
 class Student:
     def __init__(self, name, age, marks):
-        self. name = name
+        self.name = name
         self.age = age
         self.marks = marks
     def average(self):
         return sum(self.marks)/len(self.marks)
        
     def grade(self):
-        grade = ''
         avg = self.average()
         if avg >= 80:
-            grade = 'A'
+            return 'A'
         elif avg >= 60:
-            grade = 'B'
+            return 'B'
         else:
-            grade = 'C'
-        self.grade = grade
-        return grade
+            return 'C'
+
 
     def __str__(self):
-        return f"{self.name} (Age {self.age}) - Grade: {self.average}"
+        return f"{self.name} (Age {self.age}) - Grade: {self.grade()}"
+    
+    def __gt__(self, other):
+        return self.average() > other.average()
+        
+        
+    def __lt__(self, other):
+        return self.average() < other.average() 
 
 
-student1 = Student('Riya', 15, [33, 45, 56, 78 , 76])
+student1 = Student('Priya', 17, [33, 45, 56, 78 , 76])
 print(student1.grade())
 print(student1.average())
 print(student1)
+
+s1 = Student('Riya', 15, [80, 90, 85])
+s2 = Student('Arjun', 16, [70, 65, 72])
+
+print(s1 > s2)
+print(s1 < s2)
