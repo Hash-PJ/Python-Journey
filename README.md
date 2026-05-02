@@ -12,11 +12,6 @@ Become a Python Backend Developer with strong fundamentals, projects, and a publ
 - Created GitHub account
 - Created first repository `python-journey`
 - Wrote `hello.py`
-- Learned:
-  - `git init`
-  - `git add`
-  - `git commit`
-  - `git push`
 - Added README
 
 ---
@@ -114,10 +109,8 @@ Become a Python Backend Developer with strong fundamentals, projects, and a publ
 
 ---
 
-## Day 15 – Git Deep Dive
-- Branches
-- Merge
-- `.gitignore`
+## Day 15 – Improve To-Do App
+- Check if more functionalities can be added
 
 ---
 
